@@ -4367,7 +4367,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-collapse.in {
-  overflow-y: auto;
+  overflow-y: visible;
 }
 
 @media (min-width: 768px) {
@@ -4383,7 +4383,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
     overflow: visible !important;
   }
   .navbar-collapse.in {
-    overflow-y: auto;
+    overflow-y: visible;
   }
   .navbar-collapse .navbar-nav.navbar-left:first-child {
     margin-left: -15px;

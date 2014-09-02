@@ -1,0 +1,31 @@
+body
+{
+	background-color: #7A7AFC;
+}
+a
+{
+	color: white;
+}
+.datosp
+{
+	background:#00254A;
+}
+
+.oswald
+{
+	font-family: 'Oswald', sans-serif;
+}
+.yanone
+{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 22px;
+}
+.arimo
+{
+	font-family: 'Arimo', sans-serif;
+}
+.linkreservar
+{
+	font-weight: bold;
+	background: green;
+}
