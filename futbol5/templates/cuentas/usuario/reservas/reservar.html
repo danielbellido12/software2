@@ -24,6 +24,7 @@
     <link href="../../../../assets/css/bootstrap.css" rel="stylesheet" />
     <!--FONTAWESOME MAIN STYLE -->
     <link href="../../../../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../../../assets/css/fontawesome/css/font-awesome.css">
     <!--CUSTOM STYLE -->
     <link href="../../../../assets/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="../../../../assets/css/estilos.css">
@@ -45,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand oswald" href="../../../../templates/landing.html">FÚTBOL5</a>
+                <a class="navbar-brand oswald" href="../../../../templates/landing.html">FÚTBOL5 <i class="fa fa-futbol-o"></i></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right yanone">
@@ -92,9 +93,50 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12" style="border: 1px solid">
-                <h2 class="text-center">PAGINA PARA RESERVAR</h2>
+                <h3 class="text-center oswald">Elige una fecha y completa los siguientes datos</h3>
             </div>
         </div>
+        <br><br>
+        <section class="col-md-6" style="border: 2px solid;border-radius: 25px">
+            <form class="form-horizontal">
+                <fieldset>
+                        <!-- Form Name -->
+                    <h4 class="text-center oswald">Lista Estandar</h4>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <div class="col-md-4 col-md-offset-4">
+                                <input id="usuario" name="usuario" type="text" placeholder="Usuario" class="form-control input-md" required="">
+                            </div>
+                        </div>
+                        <!-- Button -->
+                        <div class="form-group">
+                            <div class="col-md-4 col-md-offset-4">
+                                <button id="agregar" name="agregar" class="btn btn-success btn-block">Agregar miembro</button>
+                            </div>
+                        </div>
+                </fieldset>
+            </form>
+        </section>
+         <section class="col-md-6" style="border: 2px solid;border-radius: 25px">
+            <form class="form-horizontal">
+                <fieldset>
+                        <!-- Form Name -->
+                    <h4 class="text-center oswald">Lista Solidaria</h4>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <div class="col-md-4 col-md-offset-4">
+                                <input id="usuario" name="usuario" type="text" placeholder="Usuario" class="form-control input-md" required="">
+                            </div>
+                        </div>
+                        <!-- Button -->
+                        <div class="form-group">
+                            <div class="col-md-4 col-md-offset-4">
+                                <button id="agregar" name="agregar" class="btn btn-success btn-block">Agregar miembro</button>
+                            </div>
+                        </div>
+                </fieldset>
+            </form>
+        </section>
     </div>
     
     <div class="space-bottom"></div>
@@ -168,5 +210,7 @@
     <script src="../../../../assets/js/jquery.js"></script>
     <!-- CORE BOOTSTRAP LIBRARY -->
     <script src="../../../../assets/js/bootstrap.min.js"></script>
+    <!--javascript de ayuda para el ingreso de IDS-->
+    <script src="../../../../assets/js/jstools.js"></script>
 </body>
 </html>
