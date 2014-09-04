@@ -22,6 +22,7 @@
     <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
     <!--BOOTSTRAP MAIN STYLES -->
     <link href="../../../../assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="../../../../assets/css/bootstrap-datetimepicker.css" rel="stylesheet" />
     <!--FONTAWESOME MAIN STYLE -->
     <link href="../../../../assets/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../../../../assets/css/fontawesome/css/font-awesome.css">
@@ -97,6 +98,19 @@
             </div>
         </div>
         <br><br>
+        <div class="container">
+            <div class="row">
+                <div class='col-sm-6 col-sm-offset-3' style="border: 1px solid">
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker1'>
+                            <input type='text' class="form-control" placeholder="Ingresa una fecha y una hora"/>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section class="col-md-6" style="border: 2px solid;border-radius: 25px">
             <form class="form-horizontal">
                 <fieldset>
@@ -105,13 +119,13 @@
                         <!-- Text input-->
                         <div class="form-group">
                             <div class="col-md-4 col-md-offset-4">
-                                <input id="numbersOnly" name="usuario" type="text" placeholder="Id de Usuario" class="form-control input-md" onkeypress="return justNumbers(event)" required="">
+                                <input id="usuarioEstandar" name="usuario" type="text" placeholder="Id de Usuario" class="form-control input-md" onkeypress="return justNumbers(event)" required="">
                             </div>
                         </div>
                         <!-- Button -->
                         <div class="form-group">
                             <div class="col-md-4 col-md-offset-4">
-                                <button id="agregar" name="agregar" class="btn btn-success btn-block">Agregar miembro</button>
+                                <button id="agregar" name="agregar" class="btn btn-success btn-block" onClick="return agregarEstandar(event)">Agregar miembro</button>
                             </div>
                         </div>
                 </fieldset>
@@ -125,7 +139,7 @@
                         <!-- Text input-->
                         <div class="form-group">
                             <div class="col-md-4 col-md-offset-4">
-                                <input id="numbersOnly" name="usuario" type="text" placeholder="Id de Usuario" class="form-control input-md" onkeypress="return justNumbers(event)" required="">
+                                <input id="usuarioSoli" name="usuario" type="text" placeholder="Id de Usuario" class="form-control input-md" onkeypress="return justNumbers(event)" required="">
                             </div>
                         </div>
                         <!-- Button -->
@@ -212,5 +226,7 @@
     <script src="../../../../assets/js/bootstrap.min.js"></script>
     <!--javascript de ayuda para el ingreso de IDS-->
     <script src="../../../../assets/js/jstools.js"></script>
+    <script src="../../../../assets/js/moment.js"></script>
+    <script src="../../../../assets/js/bootstrap-datetimepicker.min.js"></script>
 </body>
 </html>
