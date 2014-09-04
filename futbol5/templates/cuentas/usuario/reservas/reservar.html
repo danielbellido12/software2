@@ -22,7 +22,7 @@
     <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
     <!--BOOTSTRAP MAIN STYLES -->
     <link href="../../../../assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="../../../../assets/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+    <link href="../../../../assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
     <!--FONTAWESOME MAIN STYLE -->
     <link href="../../../../assets/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="../../../../assets/css/fontawesome/css/font-awesome.css">
@@ -94,23 +94,33 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12" style="border: 1px solid">
-                <h3 class="text-center oswald">Elige una fecha y completa los siguientes datos</h3>
+                <h3 class="text-center oswald">Completa los siguientes datos</h3>
             </div>
         </div>
         <br><br>
         <div class="container">
-            <div class="row">
-                <div class='col-sm-6 col-sm-offset-3' style="border: 1px solid">
-                    <div class="form-group">
-                        <div class='input-group date' id='datetimepicker1'>
-                            <input type='text' class="form-control" placeholder="Ingresa una fecha y una hora"/>
-                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
-                            </span>
-                        </div>
-                    </div>
+    <form action="" class="form-horizontal"  role="form">
+        <fieldset>
+            <div class="form-group">
+                <label for="dtp_input2" class="col-md-4 control-label">Elige una fecha</label>
+                <div class="input-group date form_date col-md-5" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                    <input class="form-control" size="16" type="text" value="" readonly required>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                 </div>
+                <input type="hidden" id="dtp_input2" value="" /><br/>
             </div>
-        </div>
+            <div class="form-group">
+                <label for="dtp_input3" class="col-md-4 control-label">Elige una hora</label>
+                <div class="input-group date form_time col-md-5" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
+                    <input class="form-control" size="16" type="text" value="" readonly required>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                </div>
+                <input type="hidden" id="dtp_input3" value="" /><br/>
+            </div>
+        </fieldset>
+    </form>
+</div>
+        
         <section class="col-md-6" style="border: 2px solid;border-radius: 25px">
             <form class="form-horizontal">
                 <fieldset>
@@ -226,7 +236,7 @@
     <script src="../../../../assets/js/bootstrap.min.js"></script>
     <!--javascript de ayuda para el ingreso de IDS-->
     <script src="../../../../assets/js/jstools.js"></script>
-    <script src="../../../../assets/js/moment.js"></script>
-    <script src="../../../../assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../../../../assets/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="../../../../assets/js/bootstrap-datetimepicker.es.js" charset="UTF-8"></script>
 </body>
 </html>
