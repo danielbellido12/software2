@@ -28,6 +28,7 @@
     <!--CUSTOM STYLE -->
     <link href="../assets/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/estilos.css"/>
+    <link rel="stylesheet" href="../assets/css/landing.css"/>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -61,11 +62,11 @@
     <!--END NAV SECTION -->
     <!-- HOME SECTION -->
 
-    <div class="container">
-        <div class="row main-low-margin ">
+    <div class="container" style="border: 1px solid">
+        <div class="row main-low-margin" style="border: 1px solid">
 
-            <div class="col-md-8 col-sm-8">
-                <h2>Reserva una cancha ahora mismo!</h2>
+            <div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" style="border: 1px solid">
+                <h2 class="oswald text-center" style="border: 1px solid">¡Reserva una cancha ahora mismo!</h2>
                 <p>
                     Con esta nueva aplicación web podrás realizar reservas o inscribirte
                     a algunas disponibles.<br>
@@ -76,37 +77,39 @@
                     reservas en línea!
                 </p>
             </div>
-
         </div>
-
-        <div class="row main-low-margin text-center">
-                <p>
-                    Para ingresar, elige una de las siguientes opciones:
-                </p>
-            <div class="col-md-4 col-sm-4">
-                <div class="circle-body"><i class="fa fa-camera fa-5x  icon-set"></i></div>
-                <a href="login/loginUsuario.html"><h3>USUARIO</h3></a>
-                <p>
-                    Ingresa como miembro de nuestra comunidad para realizar reservas o consultar las
-                    reservas disponibles actualmente, entre otras opciones.
-                </p>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="circle-body"><i class="fa fa-dollar fa-5x  icon-set"></i></div>
-                <a href="login/loginEmpresa.html"><h3>EMPRESA</h3></a>
-                <p>
-                    Ingresa como empresa para bla bla bla bla bla bla bla
-                </p>
-            </div>
-            <div class="col-md-4 col-sm-4">
-                <div class="circle-body"><i class="fa fa-envelope fa-5x  icon-set"></i></div>
-                <a href="login/loginAdmin.html"><h3>ADMINISTRADOR</h3></a>
-                <p>
-                    Ingresa como administrador del sistema.
-                </p>
-            </div>
-
+    </div>
+    <br>
+    <div class="container" style="border: 1px solid"> 
+            <form id="miform" name="form1" class="form-signin" role="form" method="post" style="border: 1px solid">
+        <h2 class="form-signin-heading oswald text-center">Ingresa tus datos</h2>
+        <input type="text" class="form-control" id="numbersOnly" onkeypress="return justNumbers(event)" maxlength="10" placeholder="Usuario" required autofocus>
+        <input type="password" class="form-control" placeholder="Contraseña" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Recordar contraseña
+          </label>
         </div>
+        <div class="radio">
+  <label>
+    <input type="radio" name="opciones" id="radio1" value="usuario">
+    Usuario
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="opciones" id="radio2" value="empresa">
+    Empresa
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="opciones" id="radio3" value="admin">
+    Administrador
+  </label>
+</div>
+        <button id="btnIngresar" class="btn btn-lg btn-primary btn-block cerrado" type="submit">Ingresar</button>
+      </form>
         
     </div>
     <div class="space-bottom"></div>
@@ -181,6 +184,7 @@
     <!-- CORE BOOTSTRAP LIBRARY -->
     <script src="../assets/js/bootstrap.min.js"></script>
     <!-- SLIDER SCRIPTS LIBRARY -->
-    <script src="../assets/Slides-SlidesJS-3/examples/playing/js/jquery.slides.min.js"></script>
+    <script src="../assets/js/jslogin.js"></script>
+    
 </body>
 </html>
