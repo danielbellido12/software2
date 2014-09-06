@@ -24,10 +24,10 @@ jQuery(document).ready(function($) {
             form.attr('action', './cuentas/usuario/perfil.html');
             console.log("me estoy yendo al perfil del usuario");
         } else if (choice === 'empresa') {
-            form.attr('action', './cuentas/empresa/perfil.html');
+            form.attr('action', './cuentas/empresa/perfilempresa.html');
             console.log("me estoy yendo al perfil de la empresa");
         } else if (choice === 'admin'){
-        	form.attr('action','./cuentas/admin/perfil.html');
+        	form.attr('action','./cuentas/admin/perfiladmin.html');
         	console.log("me estoy yendo al perfil del admin");
         } 
     });

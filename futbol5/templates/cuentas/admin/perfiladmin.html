@@ -50,37 +50,16 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right yanone">
-                    <li><a href="#">MI CUENTA</a></li>
+                    <li><a href="#">INICIO <span class="glyphicon glyphicon-home"></span></a></li>
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">RESERVAS<b class="caret"></b>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">GESTIONAR <span class="glyphicon glyphicon-cog"></span><b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu arimo">
-                            <li><a href="reservas/reservar.html">Reservar</a></li>
-                            <li><a href="reservas/misreservas.html">Mis reservas</a></li>
-                            <li><a href="#">Historial</a></li>
-                            <li><a href="#">Calendario</a></li>
+                            <li><a href="#">Reservas</a></li>
+                            <li><a href="#">Usuarios</a></li>
                         </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="canchas.html">LAS CANCHAS<b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu arimo">
-                            <li><a href="#">Conocelas</a></li>
-                            <li><a href="#">Disponibles para hoy</a></li>
-                            <li><a href="#">Tercera</a></li>
-                        </ul>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="ayuda.html">OPCIONES<b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu arimo">
-                            <li><a href="#">Configuracion</a></li>
-                            <li><a href="#">Suscripcion</a></li>
-                            <li><a href="#">Ayuda</a></li>
-                            <li><a href="#">Acerca de</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li><a href="salir.html">SALIR</a></li>
+                    </li>                    
+                    <li><a href="salir.html">SALIR <i class="glyphicon glyphicon-log-out"></i></a></li>
                 </ul>
             </div>
 
@@ -96,6 +75,84 @@
                 <h2 class="text-center">HOMEPAGE DEL ADMINISTRADOR</h2>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="visible-lg">large screen</div>
+                <div class="visible-md">medium screen</div>
+                <div class="visible-sm">small screen</div>
+                <div class="visible-xs">extra small screen</div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-12">
+                <h4>Bienvenido, <b>Nombre Apellido</b> <span class="glyphicon glyphicon-user"></span></h4>
+                <div><h4>Modo: <b> Administrador </b> <i class="fa fa-wrench"></i> </h4></div>
+                </div>
+        </div>
+        <div class="row" style="border:1px solid">
+            <div class="list-group col-md-2 col-xs-3 col-sm-3" style="border: 1px solid blue">
+            <a href="#" class="list-group-item">
+                Cuenta
+            </a>
+            <a href="#" class="list-group-item">Reservas</a>
+            <a href="#" class="list-group-item active">Usuarios</a>
+            <a href="#" class="list-group-item">Opcion4</a>
+            <a href="#" class="list-group-item">Opcion5</a>
+            </div>
+            <div id="contenido" class="col-md-8 col-sm-6 col-xs-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-1" style="border:1px solid green">
+                <h4 class="text-center">Suponiendo que estamos en la pag de gestionar usuarios - crear uno</h4>
+
+                <form class="form-horizontal" role="form">
+                      <div class="form-group">
+                        <label for="inputNombre" class="col-sm-2 control-label">Nombres</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="nombres" placeholder="" autofocus required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputApellido" class="col-sm-2 control-label">Apellidos</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="apellidos" placeholder="" required>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputFechaNac" class="col-sm-2 control-label">Fecha Nacimiento</label>
+                        <div class="col-sm-10">
+                          <input type="date" class="form-control" id="fechanac" placeholder="" required>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="" class="col-sm-offset-1 col-sm-10">Tipo</label>
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="radiousuario" value="usuario" required>
+                                Usuario
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="radioempresa" value="empresa">
+                                Empresa
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="radioadmin" value="admin">
+                                Administrador
+                              </label>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="form-group row" style="border:1px solid">
+                        <div class="col-md-6 center-block" style="border:2px dashed">
+                          <button type="submit" class="btn btn-primary center-block">Registrar</button>
+                        </div>
+                      </div>
+                </form>
+            </div>
+        
     </div>
     
     <div class="space-bottom"></div>
