@@ -21,14 +21,14 @@
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
     <!--BOOTSTRAP MAIN STYLES -->
-    <link href="../../../assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="../../../../../assets/css/bootstrap.css" rel="stylesheet" />
     <!--FONTAWESOME MAIN STYLE -->
-    <link href="../../../assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../../../assets/css/fontawesome/css/font-awesome.css">
+    <link href="../../../../../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../../../../assets/css/fontawesome/css/font-awesome.css">
     <!--CUSTOM STYLE -->
-    <link href="../../../assets/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../../../assets/css/estilos.css">
-    <link rel="stylesheet" href="../../../assets/css/sidebar.css">
+    <link href="../../../../../assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../../../../assets/css/estilos.css">
+    <link rel="stylesheet" href="../../../../../assets/css/sidebar.css">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -47,11 +47,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand oswald" href="#">FÚTBOL5 <i class="fa fa-futbol-o"></i></a>
+                <a class="navbar-brand oswald" href="../../perfiladmin.html">FÚTBOL5 <i class="fa fa-futbol-o"></i></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right yanone">
-                    <li><a href="#">INICIO <span class="glyphicon glyphicon-home"></span></a></li>
+                    <li><a href="../../perfiladmin.html">INICIO <span class="glyphicon glyphicon-home"></span></a></li>
                     <!--<li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">GESTIONAR <span class="glyphicon glyphicon-cog"></span><b class="caret"></b>
                         </a>
@@ -60,7 +60,7 @@
                             <li><a href="#">Usuarios</a></li>
                         </ul>
                     </li>-->                    
-                    <li><a href="salir.html">SALIR <i class="glyphicon glyphicon-log-out"></i></a></li>
+                    <li><a href="#">SALIR <i class="glyphicon glyphicon-log-out"></i></a></li>
                 </ul>
             </div>
 
@@ -98,19 +98,13 @@
                 </div>
                 <div class="list-group">
                   <ul class="nav navbar-nav yanone" style="font-weight:normal">
-                    <li class="active"><a href="#">Tu cuenta</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reservas <b class="caret"></b></a>
-                        <ul class="dropdown-menu arimo">
-                          <li><a href="#">Editar (?)</a></li>
-                          <li><a href="#">Eliminar</a></li>
-                        </ul>
-                      </li>
-                    <li class="dropdown">
+                    <li><a href="#">Tu cuenta</a></li>
+                    <li><a href="#">Reservas</a></li>
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Miembros <b class="caret"></b></a>
                         <ul class="dropdown-menu arimo">
-                          <li class=""><a href="edit/miembros/registrar.html">Registrar</a></li>
-                          <li><a href="edit/miembros/editar.html">Editar</a></li>
+                          <li class=""><a href="registrar.html">Registrar</a></li>
+                          <li class="active"><a href="#" class="">Editar</a></li>
                           <li><a href="#">Eliminar</a></li>
                         </ul>
                       </li>
@@ -132,9 +126,81 @@
         </div><!--/span-->
       </div>
             <div id="contenido" class="col-md-8 col-sm-6 col-xs-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-1" style="border:1px solid green">
-                <h4 class="text-center">Por defecto al ingresar el admin llega a la opcion de editar su cuenta del menu de la izquierda</h4>
-                <p>Juega con el menu de la izquierda, en la opción de miembros</p>
+                <h4 class="text-center oswald">Editar miembro</h4>
 
+                <form class="form-horizontal" role="form">
+                      <div class="form-group">
+                        <label for="inputID" class="col-sm-2 control-label">ID del miembro</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="idmiembro" placeholder="1234567890" maxlength="10" readonly>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputNombre" class="col-sm-2 control-label">Nombres</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="nombres" placeholder="" readonly>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputApellido" class="col-sm-2 control-label">Apellidos</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="apellidos" placeholder="" readonly>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputFechaNac" class="col-sm-2 control-label">Fecha Nacimiento</label>
+                        <div class="col-sm-10">
+                          <input type="date" class="form-control" id="fechanac" placeholder="" readonly>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="control-label col-sm-2">Estado</label>
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="optionsRadio" id="radiohab" value="habilitado" disabled>
+                                Habilitado
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="optionsRadio" id="radioban" value="baneado" disabled>
+                                Baneado
+                              </label>
+                            </div>
+                        </div>
+                      </div>
+                      
+
+                      <div class="form-group">
+                        <label for="" class="control-label col-sm-2">Tipo</label>
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="radiousuario" value="usuario" disabled>
+                                Usuario
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="radioempresa" value="empresa" disabled>
+                                Empresa
+                              </label>
+                            </div>
+                            <div class="radio">
+                              <label>
+                                <input type="radio" name="optionsRadios" id="radioadmin" value="admin" disabled>
+                                Administrador
+                              </label>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="form-group row" style="border:1px solid">
+                        <div class="col-md-6 center-block" style="border:2px dashed">
+                          <button type="submit" class="btn btn-md btn-primary center-block">Editar</button>
+                        </div>
+                      </div>
+                </form>
             </div>
         </div>
     </div>
@@ -207,8 +273,10 @@
     <!--END FOOTER SECTION -->
     <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
     <!-- CORE JQUERY LIBRARY -->
-    <script src="../../../assets/js/jquery.js"></script>
+    <script src="../../../../../assets/js/jquery.js"></script>
     <!-- CORE BOOTSTRAP LIBRARY -->
-    <script src="../../../assets/js/bootstrap.min.js"></script>
+    <script src="../../../../../assets/js/bootstrap.min.js"></script>
+    <!--JS PERSONALIZADO-->
+    <script src="../../../../../assets/js/jseditmiembros.js"></script>
 </body>
 </html>
