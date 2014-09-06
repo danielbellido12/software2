@@ -1,0 +1,32 @@
+section {
+  padding: 1.2em;
+}
+section article {
+  border: 1px solid #8f8f8f;
+  border-bottom-left-radius: 0.8em;
+  border-bottom-right-radius: 0.8em;
+  margin-bottom: 1.2em;
+  overflow: hidden;
+}
+section article figure {
+  background-color: #8f8f8f;
+  height: 160px;
+  width: 120px;
+}
+section article h2{
+  font-size:26px;
+  margin-bottom:-15px;
+}
+section article h3 {
+  font-size: 18px;
+  color: #444;
+  margin-top:0px;
+}
+section a{
+  color:green;
+}
+section article .masinfo {
+  border-top: 3px solid #8f8f8f;
+  min-height: 3em;
+  padding: 0.8em;
+}

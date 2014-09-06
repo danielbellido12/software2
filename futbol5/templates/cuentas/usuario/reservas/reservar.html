@@ -90,24 +90,21 @@
     <div class="space-top"></div>
     <!--END NAV SECTION -->
     <!-- HOME SECTION -->
+    <div class="visible-lg">lg</div>
+    <div class="visible-md">md</div>
+    <div class="visible-sm">sm</div>
+    <div class="visible-xs">xs</div>
 
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12" style="border: 1px solid">
-                <h3 class="text-center oswald">Completa los siguientes datos</h3>
-            </div>
-        </div>
-        <br><br>
-        <div class="container">
-    <form action="" class="form-horizontal"  role="form">
+    <form action="" class="form-horizontal row"  role="form" style="border: 1px solid">
+        <h3 class="oswald text-center" style="border: 1px solid">Completa los siguientes datos</h3>
         <fieldset>
-            <div class="form-group">
+            <div class="form-group form-inline">
                 <label for="dtp_input2" class="col-md-4 control-label">Elige una fecha</label>
                 <div class="input-group date form_date col-md-5" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
                     <input class="form-control" size="16" type="text" value="" readonly required>
                     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                 </div>
-                <input type="hidden" id="dtp_input2" value="" /><br/>
             </div>
             <div class="form-group">
                 <label for="dtp_input3" class="col-md-4 control-label">Elige una hora</label>
@@ -115,52 +112,40 @@
                     <input class="form-control" size="16" type="text" value="" readonly required>
                     <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
                 </div>
-                <input type="hidden" id="dtp_input3" value="" /><br/>
             </div>
+            <div class="col-md-3 center-block" style="border: 1px solid">
+                <h4 class="oswald text-center">Canchas Disponibles</h4>
+            </div>
+            <div class="row center-block" style="border: 1px solid green" id="radioBotones1">
+                <div class="col-md-3 oswald center-block text-center" style="color:blue">Por favor Selecciona una</div>
+
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label">Canchas</label>
+                            <div class="col-sm-8">
+                                <label class="radio-inline"> <input type="radio" name="canchas" id="cancha1" value="cancha1"> 1 </label>
+                                <label class="radio-inline"> <input type="radio" name="canchas" id="cancha2" value="cancha2"> 2 </label>
+                                <label class="radio-inline"> <input type="radio" name="canchas" id="cancha3" value="cancha3"> 3 </label>
+                                <label class="radio-inline"> <input type="radio" name="canchas" id="cancha4" value="cancha4"> 4 </label>
+                                <label class="radio-inline"> <input type="radio" name="canchas" id="cancha5" value="cancha5"> 5 </label>
+                                <label class="radio-inline"> <input type="radio" name="canchas" id="cancha6" value="cancha6"> 6 </label>
+                                <label class="radio-inline"> <input type="radio" name="canchas" id="cancha7" value="cancha7"> 7 </label>
+                                <label class="radio-inline"> <input type="radio" name="canchas" id="cancha8" value="cancha8"> 8 </label>
+                                <label class="radio-inline"> <input type="radio" name="canchas" id="cancha9" value="cancha9"> 9 </label>
+                                <label class="radio-inline"> <input type="radio" name="canchas" id="cancha10" value="cancha10"> 10 </label>
+                            </div>
+                    </div>
+                </form>
+            </div>           
+                
+                <div class="row" style="border: 1px solid">
+                    <div class="col col-lg-3 col-md-3 col-sm-4 col-xs-6 col-xs-offset-3 col-lg-offset-5 col-sm-offset-4 col-md-offset-5 center-block" style="border:1px solid red">
+                        <button class="btn btn-lg btn-success btn-block">Ingresar Reserva</button>
+                    </div>
+                </div>
         </fieldset>
     </form>
-</div>
         
-        <section class="col-md-6" style="border: 2px solid;border-radius: 25px">
-            <form class="form-horizontal">
-                <fieldset>
-                        <!-- Form Name -->
-                    <h4 class="text-center oswald">Lista Estandar</h4>
-                        <!-- Text input-->
-                        <div class="form-group">
-                            <div class="col-md-4 col-md-offset-4">
-                                <input id="usuarioEstandar" name="usuario" type="text" placeholder="Id de Usuario" class="form-control input-md" onkeypress="return justNumbers(event)" required="">
-                            </div>
-                        </div>
-                        <!-- Button -->
-                        <div class="form-group">
-                            <div class="col-md-4 col-md-offset-4">
-                                <button id="agregar" name="agregar" class="btn btn-success btn-block" onClick="return agregarEstandar(event)">Agregar miembro</button>
-                            </div>
-                        </div>
-                </fieldset>
-            </form>
-        </section>
-         <section class="col-md-6" style="border: 2px solid;border-radius: 25px">
-            <form class="form-horizontal">
-                <fieldset>
-                        <!-- Form Name -->
-                    <h4 class="text-center oswald">Lista Solidaria</h4>
-                        <!-- Text input-->
-                        <div class="form-group">
-                            <div class="col-md-4 col-md-offset-4">
-                                <input id="usuarioSoli" name="usuario" type="text" placeholder="Id de Usuario" class="form-control input-md" onkeypress="return justNumbers(event)" required="">
-                            </div>
-                        </div>
-                        <!-- Button -->
-                        <div class="form-group">
-                            <div class="col-md-4 col-md-offset-4">
-                                <button id="agregar" name="agregar" class="btn btn-success btn-block">Agregar miembro</button>
-                            </div>
-                        </div>
-                </fieldset>
-            </form>
-        </section>
     </div>
     
     <div class="space-bottom"></div>
