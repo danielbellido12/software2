@@ -71,7 +71,7 @@
     <!-- HOME SECTION -->
     <div class="container">
         <div class="row">
-            <div class="col-xs-12" style="border: 1px solid">
+            <div class="col-xs-12">
                 <h2 class="text-center">HOMEPAGE DEL ADMINISTRADOR</h2>
             </div>
         </div>
@@ -89,9 +89,9 @@
                 <div><h4>Modo: <b> Administrador </b> <i class="fa fa-wrench"></i> </h4></div>
                 </div>
         </div>
-        <div class="row" style="border:1px solid">
-            <div class="col-md-2 col-xs-4 col-sm-3" id="sidebar" role="navigation" style="border:1px solid blue">
-          <div class="sidebar-nav" style="border: 1px dashed">
+        <div class="row">
+            <div class="col-md-2 col-xs-4 col-sm-3" id="sidebar" role="navigation">
+          <div class="sidebar-nav">
               <div class="navbar navbar-default" role="navigation" style="border:1px dashed green">
                 <div class="navbar-header">
                   <span class="navbar-brand oswald" style="font-weight:bold">Menú</span>
@@ -104,8 +104,8 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Miembros <b class="caret"></b></a>
                         <ul class="dropdown-menu arimo">
                           <li class=""><a href="registrar.html">Registrar</a></li>
-                          <li class="active"><a href="#" class="">Editar</a></li>
-                          <li><a href="#">Eliminar</a></li>
+                          <li class="active"><a href="editar.html" class="">Editar</a></li>
+                          <li><a href="eliminar.html">Eliminar</a></li>
                         </ul>
                       </li>
                     <li class="dropdown">
@@ -138,19 +138,19 @@
                       <div class="form-group">
                         <label for="inputNombre" class="col-sm-2 control-label">Nombres</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="nombres" placeholder="" readonly>
+                          <input type="text" class="form-control" id="nombres" placeholder="">
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="inputApellido" class="col-sm-2 control-label">Apellidos</label>
                         <div class="col-sm-10">
-                          <input type="text" class="form-control" id="apellidos" placeholder="" readonly>
+                          <input type="text" class="form-control" id="apellidos" placeholder="">
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="inputFechaNac" class="col-sm-2 control-label">Fecha Nacimiento</label>
                         <div class="col-sm-10">
-                          <input type="date" class="form-control" id="fechanac" placeholder="" readonly>
+                          <input type="date" class="form-control" id="fechanac" placeholder="">
                         </div>
                       </div>
                       <div class="form-group">
@@ -158,13 +158,13 @@
                         <div class="col-sm-offset-2 col-sm-10">
                             <div class="radio">
                               <label>
-                                <input type="radio" name="optionsRadio" id="radiohab" value="habilitado" disabled>
+                                <input type="radio" name="optionsRadio" id="radiohab" value="habilitado">
                                 Habilitado
                               </label>
                             </div>
                             <div class="radio">
                               <label>
-                                <input type="radio" name="optionsRadio" id="radioban" value="baneado" disabled>
+                                <input type="radio" name="optionsRadio" id="radioban" value="baneado">
                                 Baneado
                               </label>
                             </div>
@@ -177,27 +177,27 @@
                         <div class="col-sm-offset-2 col-sm-10">
                             <div class="radio">
                               <label>
-                                <input type="radio" name="optionsRadios" id="radiousuario" value="usuario" disabled>
+                                <input type="radio" name="optionsRadios" id="radiousuario" value="usuario">
                                 Usuario
                               </label>
                             </div>
                             <div class="radio">
                               <label>
-                                <input type="radio" name="optionsRadios" id="radioempresa" value="empresa" disabled>
+                                <input type="radio" name="optionsRadios" id="radioempresa" value="empresa">
                                 Empresa
                               </label>
                             </div>
                             <div class="radio">
                               <label>
-                                <input type="radio" name="optionsRadios" id="radioadmin" value="admin" disabled>
+                                <input type="radio" name="optionsRadios" id="radioadmin" value="admin">
                                 Administrador
                               </label>
                             </div>
                         </div>
                       </div>
-                      <div class="form-group row" style="border:1px solid">
-                        <div class="col-md-6 center-block" style="border:2px dashed">
-                          <button type="submit" class="btn btn-md btn-primary center-block">Editar</button>
+                      <div class="form-group row">
+                        <div class="col-md-6 center-block">
+                          <button type="submit" class="btn btn-md btn-primary center-block">Guardar</button>
                         </div>
                       </div>
                 </form>
