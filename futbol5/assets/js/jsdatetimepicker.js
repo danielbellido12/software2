@@ -1,5 +1,8 @@
 $(function () {
-	$('.form_date').datetimepicker({
+	   
+
+	$('.form_date').datetimepicker({         
+
         language:  'es',
         weekStart: 1,
         todayBtn:  1,
@@ -8,7 +11,7 @@ $(function () {
 		startView: 2,
 		minView: 2,
 		forceParse: 0,
-		startDate: '2014-09-04'
+		startDate: '2014-09-07'
     });
 	$('.form_time').datetimepicker({
         language:  'es',
