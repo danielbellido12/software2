@@ -52,7 +52,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right yanone">
                     <li><a href="landing.html">INICIO</a></li>
-                    <li><a href="nosotros.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="#">SOBRE NOSOTROS</a></li>
                     <li><a href="#footer">CONTACTO</a></li>
                 </ul>
             </div>
@@ -62,26 +62,25 @@
     <!--END NAV SECTION -->
     <!-- HOME SECTION -->
 
-    <div class="container" style="border: 1px solid">
-        <div class="row main-low-margin" style="border: 1px solid">
+    <div class="container">
+        <div class="row main-low-margin">
 
-            <div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2" style="border: 1px solid">
-                <h2 class="oswald text-center" style="border: 1px solid">¡Reserva una cancha ahora mismo!</h2>
+            <div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                <h2 class="oswald text-center">¡Reserva una cancha ahora mismo!</h2>
                 <p>
-                    Con esta nueva aplicación web podrás realizar reservas o inscribirte
-                    a algunas disponibles.<br>
-                    ACA IRIA UNA BREVE DESCRIPCION SOBRE LO QUÉ ES ESTA WEB APP
-                </p>
-                <p>
-                    La comunidad de Fútbol5 te brinda esta herramienta para que desde ya puedas realizar
-                    reservas en línea!
+                    La comunidad <b> Fútbol5 </b> se complace en presentar su nuevo sistema de reservas de canchas online!<br>
+                    <ul class="list-group">
+                        <li class="list-group-item">Ingresa como <b>miembro-usuario</b> para poder realizar reservas o inscribirte en alguna disponible!</li>
+                        <li class="list-group-item">Ingresa como <b>empresa</b> para poder realizar un gestionamiento sobre las canchas que posees.</li>
+                        <li class="list-group-item">Ingresa como <b>administrador</b> para poder hacer gestión de los usuarios tales como registro, edición, etc.</li>
+                    </ul>
                 </p>
             </div>
         </div>
     </div>
     <br>
-    <div class="container" style="border: 1px solid"> 
-            <form id="miform" name="form1" class="form-signin" role="form" method="post" style="border: 1px solid">
+    <div class="container"> 
+            <form id="miform" name="form1" class="form-signin" role="form" method="post">
         <h2 class="form-signin-heading oswald text-center">Ingresa tus datos</h2>
         <input type="text" class="form-control" id="numbersOnly" onkeypress="return justNumbers(event)" maxlength="10" placeholder="Usuario" required autofocus>
         <input type="password" class="form-control" placeholder="Contraseña" required>

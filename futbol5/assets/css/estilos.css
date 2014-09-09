@@ -2,11 +2,6 @@ a
 {
 	color: white;
 }
-.datosp
-{
-	background:#00254A;
-}
-
 .oswald
 {
 	font-family: 'Oswald', sans-serif;
@@ -24,4 +19,8 @@ a
 {
 	font-weight: bold;
 	background: green;
+}
+.titulito
+{
+	color:black;
 }

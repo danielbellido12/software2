@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -14,21 +14,22 @@
     <!--[if IE]>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <![endif]-->
-    <title>Bootstrap Mutipager Template - Maxop</title>
+    <title>Página de Inicio</title>
     <!--GOOGLE FONT -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
     <!--BOOTSTRAP MAIN STYLES -->
-    <link href="../../assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="../../../../../assets/css/bootstrap.css" rel="stylesheet" />
     <!--FONTAWESOME MAIN STYLE -->
-    <link href="../../assets/css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../../assets/css/fontawesome/css/font-awesome.css">
+    <link href="../../../../../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../../../../assets/css/fontawesome/css/font-awesome.css">
     <!--CUSTOM STYLE -->
-    <link href="../../assets/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../../assets/css/login.css"/>
-    <link rel="stylesheet" href="../../assets/css/estilos.css"/>
+    <link href="../../../../../assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../../../../assets/css/estilos.css">
+    <link rel="stylesheet" href="../../../../../assets/css/sidebar.css">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -46,40 +47,96 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand oswald" href="#">FÚTBOL5 <i class="fa fa-futbol-o"></i></a>
+                <a class="navbar-brand oswald" href="../../perfiladmin.html">FÚTBOL5 <i class="fa fa-futbol-o"></i></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right yanone">
-                    <li><a href="../landing.html">INICIO</a></li>
-                    <li><a href="../nosotros.html">SOBRE NOSOTROS</a></li>
-                    <li><a href="#footer">CONTACTO</a></li>
+                    <li><a href="../../perfiladmin.html">INICIO <span class="glyphicon glyphicon-home"></span></a></li>
+                    <!--<li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">GESTIONAR <span class="glyphicon glyphicon-cog"></span><b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu arimo">
+                            <li><a href="#">Reservas</a></li>
+                            <li><a href="#">Usuarios</a></li>
+                        </ul>
+                    </li>-->                    
+                    <li><a href="#">SALIR <i class="glyphicon glyphicon-log-out"></i></a></li>
                 </ul>
             </div>
 
         </div>
     </div>
+    <div class="space-top"></div>
     <!--END NAV SECTION -->
-    <!-- ABOUT SECTION -->
+    <!-- HOME SECTION -->
     <div class="container">
-
-      <form class="form-signin" role="form" action="../cuentas/usuario/perfil.html" method="post">
-        <h2 class="form-signin-heading oswald text-center">Ingresa tus datos</h2>
-        <input type="text" class="form-control" id="numbersOnly" onkeypress="return justNumbers(event)" maxlength="10" placeholder="Usuario" required autofocus>
-        <input type="password" class="form-control" placeholder="Contraseña" required>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> Recordar contraseña
-          </label>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-center">HOMEPAGE DEL ADMINISTRADOR</h2>
+            </div>
         </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
-      </form>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="visible-lg">large screen</div>
+                <div class="visible-md">medium screen</div>
+                <div class="visible-sm">small screen</div>
+                <div class="visible-xs">extra small screen</div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-12">
+                <h4>Bienvenido, <b>Nombre Apellido</b> <span class="glyphicon glyphicon-user"></span></h4>
+                <div><h4>Modo: <b> Administrador </b> <i class="fa fa-wrench"></i> </h4></div>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-xs-4 col-sm-3" id="sidebar" role="navigation">
+          <div class="sidebar-nav">
+              <div class="navbar navbar-default" role="navigation" style="border:1px dashed green">
+                <div class="navbar-header">
+                  <span class="navbar-brand oswald" style="font-weight:bold">Menú</span>
+                </div>
+                <div class="list-group">
+                  <ul class="nav navbar-nav yanone" style="font-weight:normal">
+                    <li><a href="#">Tu cuenta</a></li>
+                    <li><a href="#">Reservas</a></li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Miembros <b class="caret"></b></a>
+                        <ul class="dropdown-menu arimo">
+                          <li class="active"><a href="registrar.html">Registrar</a></li>
+                          <li class=""><a href="editar.html" class="">Editar</a></li>
+                          <li class=""><a href="eliminar.html">Eliminar</a></li>
+                        </ul>
+                      </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Empresas <b class="caret"></b></a>
+                        <ul class="dropdown-menu arimo">
+                          <li class=""><a href="#">Registrar</a></li>
+                          <li><a href="#">Editar</a></li>
+                          <li><a href="#">Eliminar</a></li>
+                        </ul>
+                      </li>
+                    <li><a href="#">Opción 4</a></li>
+                    <li><a href="#">Opción 5</a></li>
+                    <li><a href="#">Opción 6</a></li>
+                    <li><a href="#">Opción 7</a></li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+              </div>
+        </div><!--/span-->
+      </div>
+            <div id="contenido" class="col-md-8 col-sm-6 col-xs-6 col-xs-offset-2 col-sm-offset-2 col-md-offset-1" style="border:1px solid green">
+                <h4 class="text-center oswald">Se editó al miembro correctamente</h4>
 
-    </div> <!-- /container -->
+    </div>
+</div>
+</div>
+    
     <div class="space-bottom"></div>
-    <!--END ABOUT SECTION -->
+    <!--END HOME SECTION -->
     <!--FOOTER SECTION -->
 
-    <div id="footer">
+    <div id="footer" style="border: 1px solid green">
         <div class="row">
             <div class="col-md-4">
                 <h4 class="oswald">Proyecto de Software 2</h4>
@@ -143,12 +200,10 @@
     <!--END FOOTER SECTION -->
     <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
     <!-- CORE JQUERY LIBRARY -->
-    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../../../../assets/js/jquery.js"></script>
     <!-- CORE BOOTSTRAP LIBRARY -->
-    <script src="../../assets/js/bootstrap.min.js"></script>
-    <!--javascript de ayuda para el login-->
-    <script src="../../assets/js/jstools.js"></script>
-
- 
+    <script src="../../../../../assets/js/bootstrap.min.js"></script>
+    <!--JS PERSONALIZADO-->
+    <script src="../../../../../assets/js/jseditmiembros.js"></script>
 </body>
 </html>
